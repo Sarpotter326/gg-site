@@ -1,0 +1,11 @@
+# dependencies & build output
+node_modules/
+.next/
+out/
+.vercel/
+npm-debug.log*
+yarn-debug.log*
+.DS_Store
+
+# local images you don't want online (optional – keep if you like)
+public/charms/raw/*
