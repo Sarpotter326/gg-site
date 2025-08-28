@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const [cart, setCart] = useState(0);
@@ -13,30 +14,30 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-rose-50/60 to-white text-neutral-900">
+  <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-emerald-50 text-neutral-900 font-sans">
       {/* Announcement bar */}
-      <div className="w-full bg-black px-4 py-2 text-center text-xs text-white">
-        Free local pickup in NJ • Flat $5 shipping • Made with love ♡
+      <div className="w-full bg-amber-500 px-4 py-2 text-center text-xs text-white tracking-wide">
+        Free local pickup in NJ &bull; Flat $5 shipping &bull; Made with love ♡
       </div>
 
       {/* Header */}
-      <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur">
+      <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur shadow-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-          <a href="#" className="flex items-center gap-2">
-            <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-amber-100">💖</span>
-            <span className="font-serif text-xl">Grace & Gold Co.</span>
+          <a href="#" className="flex items-center gap-3">
+            <Image src="/logo.png" alt="Grace & Gold Co. Logo" width={70} height={70} className="rounded-full border border-amber-200 bg-pink-50" />
+            <span className="font-serif text-2xl text-amber-700">Grace & Gold Co.</span>
           </a>
           <nav className="hidden items-center gap-6 md:flex">
-            <a href="#shop" className="hover:underline underline-offset-4">Shop</a>
-            <a href="#book" className="hover:underline underline-offset-4">Permanent Jewelry</a>
-            <a href="#events" className="hover:underline underline-offset-4">Events</a>
-            <a href="#about" className="hover:underline underline-offset-4">About</a>
-            <button className="rounded-2xl border px-3 py-1.5 text-sm">Subscribe</button>
+            <a href="#shop" className="hover:text-emerald-600 transition">Shop</a>
+            <a href="#book" className="hover:text-emerald-600 transition">Permanent Jewelry</a>
+            <a href="#events" className="hover:text-emerald-600 transition">Events</a>
+            <a href="#about" className="hover:text-emerald-600 transition">About</a>
+            <button className="rounded-2xl border border-amber-300 bg-pink-100 px-3 py-1.5 text-sm text-amber-700 hover:bg-amber-100 transition">Subscribe</button>
           </nav>
-          <button aria-label="Cart" className="relative rounded-full border p-2">
+          <button aria-label="Cart" className="relative rounded-full border border-amber-300 p-2 bg-white shadow">
             🛒
             {cart > 0 && (
-              <span className="absolute -right-2 -top-2 inline-flex h-5 min-w-[20px] items-center justify-center rounded-full bg-black px-1 text-xs text-white">
+              <span className="absolute -right-2 -top-2 inline-flex h-5 min-w-[20px] items-center justify-center rounded-full bg-emerald-600 px-1 text-xs text-white">
                 {cart}
               </span>
             )}
