@@ -1,0 +1,13 @@
+:root{
+  --gg-rose:#F8DCE4; /* blush */
+  --gg-ivory:#FFF9F6; /* background */
+  --gg-gold:#C9A26C; /* accents */
+  --gg-ink:#2B2B2B;  /* text */
+}
+html,body{margin:0;padding:0;background:var(--gg-ivory);color:var(--gg-ink);font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;}
+a{color:inherit;text-decoration:none}
+*{box-sizing:border-box}
+.btn{background:var(--gg-gold);color:#fff;border:none;border-radius:999px;padding:12px 20px;font-weight:600;cursor:pointer}
+.btn:hover{opacity:.92}
+.card{background:#fff;border-radius:16px;padding:16px;box-shadow:0 6px 20px rgba(0,0,0,.06)}
+h1,h2,h3{font-family: "Times New Roman", Georgia, serif;}
