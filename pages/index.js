@@ -1,3 +1,5 @@
+import Link from 'next/link';
+// ...existing code...
 import { useState } from "react";
 import Image from "next/image";
 
@@ -70,9 +72,9 @@ export default function Home() {
             >
               &#9776;
             </button>
-            <Link href="/" legacyBehavior>
-              <a className="text-2xl font-extralight tracking-tight" style={{ fontFamily: 'Quicksand, Avenir, sans-serif', color: '#CBB292', letterSpacing: '0.08em', textDecoration: 'none' }}>Grace & Gold Co.</a>
-            </Link>
+              <Link href="/" legacyBehavior>
+                <a className="text-2xl font-extralight tracking-tight" style={{ fontFamily: 'Quicksand, Avenir, sans-serif', color: '#CBB292', letterSpacing: '0.08em', fontWeight: 200, textDecoration: 'none' }}>Grace & Gold Co.</a>
+              </Link>
           </div>
           <button aria-label="Cart" className="relative rounded-full border border-[#B76E79] p-2 bg-white shadow-sm">
             🛒
