@@ -1,6 +1,5 @@
 import { useState } from "react";
-import Image from "next/image";
-
+import { useState } from "react";
 
 function SidebarNav({ open, onClose }) {
   return (
@@ -44,7 +43,7 @@ function SidebarNav({ open, onClose }) {
     </div>
   );
 }
-
+import Image from "next/image";
 
 export default function Home() {
   const [cart, setCart] = useState(0);
@@ -60,8 +59,7 @@ export default function Home() {
   ];
 
   return (
-  <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-emerald-50 text-neutral-900 font-sans">
-
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-emerald-50 text-neutral-900 font-sans">
       {/* Header */}
       <header className="w-full bg-white border-b border-[#F5E2DA]">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
@@ -73,7 +71,9 @@ export default function Home() {
             >
               &#9776;
             </button>
-            <span className="text-3xl font-bold tracking-tight" style={{ fontFamily: 'Quicksand, Avenir, sans-serif', color: '#CBB292', letterSpacing: '0.02em' }}>Grace & Gold Co.</span>
+            <Link href="/" legacyBehavior>
+              <a className="text-2xl font-extralight tracking-tight" style={{ fontFamily: 'Quicksand, Avenir, sans-serif', color: '#CBB292', letterSpacing: '0.08em', textDecoration: 'none' }}>Grace & Gold Co.</a>
+            </Link>
           </div>
           <button aria-label="Cart" className="relative rounded-full border border-[#B76E79] p-2 bg-white shadow-sm">
             🛒
@@ -84,11 +84,21 @@ export default function Home() {
             )}
           </button>
         </div>
-        <SidebarNav open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+        {/* SidebarNav and overlay for closing sidebar when clicking outside */}
+        {sidebarOpen && (
+          <>
+            <SidebarNav open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+            {/* Overlay only covers area to the right of sidebar */}
+            <div
+              className="fixed top-0 left-80 right-0 bottom-0 z-40 bg-black bg-opacity-10 cursor-pointer"
+              onClick={() => setSidebarOpen(false)}
+            />
+          </>
+        )}
       </header>
 
       {/* Hero */}
-  <section className="mx-auto grid max-w-5xl items-center gap-12 px-6 py-16 sm:px-8 lg:grid-cols-2 lg:py-20 lg:px-12">
+      <section className="mx-auto grid max-w-5xl items-center gap-12 px-6 py-16 sm:px-8 lg:grid-cols-2 lg:py-20 lg:px-12">
         <div>
           <span className="inline-block rounded-full px-3 py-1 text-xs font-medium" style={{ color: '#B76E79', background: '#F5E2DA' }}>Custom charms · Permanent jewelry</span>
           <h1 className="mt-6 font-serif text-5xl font-bold leading-tight text-neutral-900">
@@ -101,9 +111,8 @@ export default function Home() {
             <a href="#shop" className="rounded-full bg-[#B76E79] px-7 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#F5E2DA] hover:text-[#B76E79] transition">Shop charms</a>
             <a href="#book" className="rounded-full border border-[#B76E79] px-7 py-3 text-base font-semibold text-[#B76E79] hover:bg-[#F5E2DA] transition">Book an event</a>
           </div>
-          <p className="mt-3 text-xs text-neutral-600">⭐️ 4.9 average rating • Woman & LGBTQ+ owned • Small-batch crafted</p>
         </div>
-  <div className="aspect-square rounded-3xl bg-[#F5E2DA] shadow-lg" />
+        <div className="aspect-square rounded-3xl bg-[#F5E2DA] shadow-lg" />
       </section>
 
       {/* Info strips */}
@@ -156,12 +165,14 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-    {/* Removed CTA section */}
+      {/* Removed CTA section */}
 
       {/* Footer */}
       <footer className="mt-8 border-t bg-white/60">
         <div className="mx-auto max-w-7xl px-4 py-10 text-sm sm:px-6 lg:px-8">
           © {new Date().getFullYear()} Grace & Gold Co. All rights reserved.
+          <br />
+          <span className="text-xs text-neutral-600">⭐️ 4.9 average rating • Woman & LGBTQ+ owned • Small-batch crafted</span>
         </div>
       </footer>
     </div>
