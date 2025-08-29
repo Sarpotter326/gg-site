@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 
 
 function SidebarNav({ open, onClose }) {
@@ -43,7 +44,7 @@ function SidebarNav({ open, onClose }) {
     </div>
   );
 }
-import Image from "next/image";
+
 
 export default function Home() {
   const [cart, setCart] = useState(0);
