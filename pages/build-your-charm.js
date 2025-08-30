@@ -18,11 +18,24 @@ export default function BuildYourCharm() {
   const [slotCount, setSlotCount] = useState(5);
 
   return (
-    <div className="min-h-screen bg-[#F7CAC9] text-[#8C6A4E] flex flex-col items-center py-10 px-4">
-      <h1 className="text-3xl font-bold mb-6">Design Your Custom Charm</h1>
+    <div className="min-h-screen bg-white text-[#8C6A4E] flex flex-col items-center py-10 px-4">
+      <h1 className="text-3xl font-bold mb-6 text-center">
+        Welcome To The{' '}
+        <span
+          style={{
+            color: '#EC407A',
+            textShadow:
+              '0 0 5px #EC407A, 0 0 10px #EC407A, 0 0 20px #EC407A, 0 0 40px #EC407A, 0 0 80px #EC407A'
+          }}
+        >
+          Charm Bar
+        </span>
+      </h1>
 
       {/* Selection for number of charms */}
-      <label htmlFor="slotCount" className="mb-2 font-medium">Select number of charms:</label>
+      <label htmlFor="slotCount" className="mb-2 font-medium">
+        Select number of charms:
+      </label>
       <select
         id="slotCount"
         value={slotCount}
