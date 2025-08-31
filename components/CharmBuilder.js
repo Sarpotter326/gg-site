@@ -1,50 +1,7 @@
 import React, { useState } from 'react';
 
-// Define your categories
 const CATEGORIES = ['Birthstones', 'Initials', 'Animals', 'Sea & Beach'];
-
-// Define available charms for each category
-const CHARM_OPTIONS = {
-  Birthstones: [
-    { id: 'jan', label: 'Jan', price: 10 },
-    { id: 'feb', label: 'Feb', price: 10 },
-    { id: 'mar', label: 'Mar', price: 10 },
-    { id: 'apr', label: 'Apr', price: 10 },
-    { id: 'may', label: 'May', price: 10 },
-    { id: 'jun', label: 'Jun', price: 10 },
-    { id: 'jul', label: 'Jul', price: 10 },
-    { id: 'aug', label: 'Aug', price: 10 },
-    { id: 'sep', label: 'Sep', price: 10 },
-    { id: 'oct', label: 'Oct', price: 10 },
-    { id: 'nov', label: 'Nov', price: 10 },
-    { id: 'dec', label: 'Dec', price: 10 }
-  ],
-  Initials: [
-    { id: 'A', label: 'A', price: 5 },
-    { id: 'B', label: 'B', price: 5 },
-    { id: 'C', label: 'C', price: 5 },
-    { id: 'D', label: 'D', price: 5 },
-    { id: 'E', label: 'E', price: 5 },
-    // ... repeat for the full alphabet ...
-    { id: 'Z', label: 'Z', price: 5 }
-  ],
-  Animals: [
-    { id: 'cat', label: 'Cat', price: 7 },
-    { id: 'dog', label: 'Dog', price: 7 },
-    { id: 'bunny', label: 'Bunny', price: 7 },
-    { id: 'bird', label: 'Bird', price: 7 },
-    { id: 'butterfly', label: 'Butterfly', price: 7 },
-    { id: 'horse', label: 'Horse', price: 7 }
-  ],
-  'Sea & Beach': [
-    { id: 'shell', label: 'Shell', price: 8 },
-    { id: 'starfish', label: 'Starfish', price: 8 },
-    { id: 'anchor', label: 'Anchor', price: 8 },
-    { id: 'wave', label: 'Wave', price: 8 },
-    { id: 'palm', label: 'Palm', price: 8 },
-    { id: 'fish', label: 'Fish', price: 8 }
-  ]
-};
+// (Keep your existing CHARM_OPTIONS here)
 
 export default function CharmBuilder({ slots = 5 }) {
   const [selectedCharms, setSelectedCharms] = useState(
@@ -52,13 +9,11 @@ export default function CharmBuilder({ slots = 5 }) {
   );
   const [activeCategory, setActiveCategory] = useState(CATEGORIES[0]);
 
-  // Calculate the total price of all selected charms
   const totalPrice = selectedCharms.reduce(
     (sum, charm) => sum + (charm?.price || 0),
     0
   );
 
-  // Add a charm to the next available slot
   const handleAddCharm = (charm) => {
     const index = selectedCharms.findIndex((c) => c === null);
     if (index !== -1) {
@@ -68,7 +23,6 @@ export default function CharmBuilder({ slots = 5 }) {
     }
   };
 
-  // Remove a charm from a slot
   const handleRemoveCharm = (idx) => {
     const updated = [...selectedCharms];
     updated[idx] = null;
@@ -77,11 +31,12 @@ export default function CharmBuilder({ slots = 5 }) {
 
   return (
     <div className="flex flex-col items-center gap-6 p-6 bg-[#FFFAF0] text-[#8C6A4E] border rounded-lg shadow">
-      <h2 className="text-3xl font-semibold text-center">
-        Design Your Custom Charm
+      {/* Step 2 heading */}
+      <h2 className="text-2xl font-semibold text-center">
+        Step 2: Design Your Custom Charm Jewelry
       </h2>
       <p className="text-center text-sm mb-4">
-        Select a category below and click charms to add them to your bracelet.
+        Select a category below and click charms to add them to your jewelry.
         Click a charm on the bracelet to remove it.
       </p>
 
