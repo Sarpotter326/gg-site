@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 
+// Define your categories
 const CATEGORIES = ['Birthstones', 'Initials', 'Animals', 'Sea & Beach'];
 
+// Define available charms for each category
 const CHARM_OPTIONS = {
   Birthstones: [
     { id: 'jan', label: 'Jan', price: 10 },
@@ -21,23 +23,26 @@ const CHARM_OPTIONS = {
     { id: 'A', label: 'A', price: 5 },
     { id: 'B', label: 'B', price: 5 },
     { id: 'C', label: 'C', price: 5 },
-    // …repeat for the rest of the alphabet…
+    { id: 'D', label: 'D', price: 5 },
+    { id: 'E', label: 'E', price: 5 },
+    // ... repeat for the full alphabet ...
     { id: 'Z', label: 'Z', price: 5 }
   ],
   Animals: [
-    { id: 'cat', label: '🐱', price: 7 },
-    { id: 'dog', label: '🐶', price: 7 },
-    { id: 'bunny', label: '🐰', price: 7 },
-    { id: 'bird', label: '🐦', price: 7 },
-    { id: 'butterfly', label: '🦋', price: 7 },
-    { id: 'horse', label: '🐴', price: 7 }
+    { id: 'cat', label: 'Cat', price: 7 },
+    { id: 'dog', label: 'Dog', price: 7 },
+    { id: 'bunny', label: 'Bunny', price: 7 },
+    { id: 'bird', label: 'Bird', price: 7 },
+    { id: 'butterfly', label: 'Butterfly', price: 7 },
+    { id: 'horse', label: 'Horse', price: 7 }
   ],
   'Sea & Beach': [
-    { id: 'shell', label: '🐚', price: 8 },
-    { id: 'starfish', label: '⭐️', price: 8 },
-    { id: 'wave', label: '🌊', price: 8 },
-    { id: 'palm', label: '🌴', price: 8 },
-    { id: 'fish', label: '🐟', price: 8 }
+    { id: 'shell', label: 'Shell', price: 8 },
+    { id: 'starfish', label: 'Starfish', price: 8 },
+    { id: 'anchor', label: 'Anchor', price: 8 },
+    { id: 'wave', label: 'Wave', price: 8 },
+    { id: 'palm', label: 'Palm', price: 8 },
+    { id: 'fish', label: 'Fish', price: 8 }
   ]
 };
 
@@ -47,12 +52,13 @@ export default function CharmBuilder({ slots = 5 }) {
   );
   const [activeCategory, setActiveCategory] = useState(CATEGORIES[0]);
 
-  // total price of all selected charms
+  // Calculate the total price of all selected charms
   const totalPrice = selectedCharms.reduce(
     (sum, charm) => sum + (charm?.price || 0),
     0
   );
 
+  // Add a charm to the next available slot
   const handleAddCharm = (charm) => {
     const index = selectedCharms.findIndex((c) => c === null);
     if (index !== -1) {
@@ -62,6 +68,7 @@ export default function CharmBuilder({ slots = 5 }) {
     }
   };
 
+  // Remove a charm from a slot
   const handleRemoveCharm = (idx) => {
     const updated = [...selectedCharms];
     updated[idx] = null;
@@ -69,22 +76,24 @@ export default function CharmBuilder({ slots = 5 }) {
   };
 
   return (
-    <div className="flex flex-col items-center gap-6 p-6 bg-gradient-to-b from-[#FFE9E9] to-[#F7CAC9] text-[#8C6A4E] rounded-xl shadow-xl">
-      <h2 className="text-3xl font-bold mb-2">Design Your Custom Charm</h2>
-      <p className="text-center text-sm mb-2">
+    <div className="flex flex-col items-center gap-6 p-6 bg-[#FFFAF0] text-[#8C6A4E] border rounded-lg shadow">
+      <h2 className="text-3xl font-semibold text-center">
+        Design Your Custom Charm
+      </h2>
+      <p className="text-center text-sm mb-4">
         Select a category below and click charms to add them to your bracelet.
         Click a charm on the bracelet to remove it.
       </p>
 
-      {/* category buttons */}
+      {/* Category buttons */}
       <div className="flex flex-wrap justify-center gap-2 mb-4">
         {CATEGORIES.map((cat) => (
           <button
             key={cat}
-            className={`px-4 py-2 rounded-full border transition-colors text-sm md:text-base shadow ${
+            className={`px-3 py-2 rounded-full border transition-colors text-sm font-medium ${
               activeCategory === cat
-                ? 'bg-[#C2185B] text-white border-[#C2185B]'
-                : 'bg-white text-[#8C6A4E] border-[#D4AF37] hover:bg-[#F5F5F5]'
+                ? 'bg-[#B76E79] text-white border-[#B76E79]'
+                : 'bg-[#FFF5F0] text-[#8C6A4E] border-[#E2C8B0] hover:bg-[#F5E2DA] hover:text-[#8C6A4E]'
             }`}
             onClick={() => setActiveCategory(cat)}
           >
@@ -93,62 +102,36 @@ export default function CharmBuilder({ slots = 5 }) {
         ))}
       </div>
 
-      {/* charm slots */}
+      {/* Charm slots */}
       <div className="flex justify-center mb-4">
         {selectedCharms.map((charm, idx) => (
           <div
             key={idx}
-            className="relative w-16 h-16 mx-2 flex items-center justify-center rounded-full border-2 border-[#D4AF37] bg-[#FFF6F6] cursor-pointer shadow"
-            onClick={() => charm && handleRemoveCharm(idx)}
-            title={charm ? 'Click to remove charm' : 'Empty slot'}
+            className="w-12 h-12 m-1 flex items-center justify-center rounded-full bg-[#F5E2DA] text-[#8C6A4E] border border-[#E2C8B0] cursor-pointer"
+            onClick={() => handleRemoveCharm(idx)}
           >
-            {/* slot number in corner */}
-            <span className="absolute -top-2 -right-2 text-xs text-[#C2185B]">
-              {idx + 1}
-            </span>
-            {charm ? (
-              <span className="text-2xl">{charm.label}</span>
-            ) : (
-              <span className="text-2xl text-[#C2185B]">+</span>
-            )}
+            {charm ? charm.label : '+'}
           </div>
         ))}
       </div>
 
-      {/* charm palette */}
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 max-w-md">
-        {CHARM_OPTIONS[activeCategory].map((charm) => (
+      {/* Charm options */}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        {CHARM_OPTIONS[activeCategory].map((c) => (
           <button
-            key={charm.id}
-            className="p-3 flex flex-col items-center justify-center rounded-lg border-2 border-[#D4AF37] bg-[#FFF6F6] hover:bg-[#FADADD] shadow text-sm"
-            onClick={() => handleAddCharm(charm)}
-            title="Add charm"
+            key={c.id}
+            className="flex flex-col items-center p-2 border rounded-lg bg-white hover:bg-[#FFF5F0] text-[#8C6A4E]"
+            onClick={() => handleAddCharm(c)}
           >
-            <span className="text-2xl mb-1">{charm.label}</span>
-            <span className="text-xs">{charm.id.toUpperCase()}</span>
-            <span className="text-xs mt-1 font-medium text-[#8C6A4E]">
-              ${charm.price}
-            </span>
+            <span className="text-sm">{c.label}</span>
+            <span className="text-xs">${c.price.toFixed(2)}</span>
           </button>
         ))}
       </div>
 
-      {/* total and add to bag */}
-      <div className="mt-6 flex flex-col items-center">
-        <span className="text-lg font-semibold">Total: ${totalPrice}</span>
-        <button
-          className="mt-3 px-6 py-3 rounded-full bg-[#C2185B] text-white font-medium shadow hover:bg-[#B21753] transition-colors"
-          onClick={() =>
-            alert(
-              `You added ${
-                selectedCharms.filter((c) => c).length
-              } charms totaling $${totalPrice}`
-            )
-          }
-        >
-          Add to Bag
-        </button>
-      </div>
+      <p className="text-lg font-medium mt-4">
+        Total price: ${totalPrice.toFixed(2)}
+      </p>
     </div>
   );
 }
