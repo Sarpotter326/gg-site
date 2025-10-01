@@ -1,7 +1,9 @@
 import Link from 'next/link';
 // ...existing code...
 import { useState } from "react";
-import Image from "next/image";
+iimport Image from "next/image";
+import products from "../data/catalog.json";
+
 
 function SidebarNav({ open, onClose }) {
   return (
@@ -50,14 +52,7 @@ export default function Home() {
   const [cart, setCart] = useState(0);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const products = [
-    { id: "A001", name: "Classic Gold Initial", price: 18, tag: "best seller", desc: "14k gold-plated custom letter" },
-    { id: "A014", name: "Petite Pearl Drop", price: 12, tag: "new",          desc: "Dainty freshwater pearl" },
-    { id: "B003", name: "Tiny Lightning Bolt", price: 10, tag: "popular",     desc: "Playful everyday pop" },
-    { id: "C021", name: "Evil Eye Enamel",     price: 14, tag: "favorite",    desc: "Protection meets style" },
-    { id: "D008", name: "Mini Butterfly",      price: 11, tag: "new",          desc: "Whimsical and light" },
-    { id: "E005", name: "Birthstone CZ",       price: 13, tag: "custom",       desc: "Pick your month sparkle" },
-  ];
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-emerald-50 text-neutral-900 font-sans">
