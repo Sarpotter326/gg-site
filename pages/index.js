@@ -1,8 +1,7 @@
 import Link from 'next/link';
-// ...existing code...
-import { useState } from "react";
-iimport Image from "next/image";
-import products from "../data/catalog.json";
+import { useState } from 'react';
+import Image from 'next/image';
+import products from '../data/catalog.json';
 
 
 function SidebarNav({ open, onClose }) {
