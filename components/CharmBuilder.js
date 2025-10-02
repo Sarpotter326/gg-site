@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
 
 const CATEGORIES = ['Birthstones', 'Initials', 'Animals', 'Sea & Beach'];
-// (Keep your existing CHARM_OPTIONS here)
+
+const CHARM_OPTIONS = {
+  Birthstones: [],
+  Initials: [],
+  Animals: [],
+  'Sea & Beach': [],
+};
+
+
 
 export default function CharmBuilder({ slots = 5 }) {
   const [selectedCharms, setSelectedCharms] = useState(
