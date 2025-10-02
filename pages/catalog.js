@@ -1,5 +1,5 @@
 import React from 'react';
-import products from '../data/gg_catalog_with_categories.json';
+import products from '../data/gg_catalog_with_images.json';
 
 // group products by a given key
 const groupBy = (arr, key) =>
