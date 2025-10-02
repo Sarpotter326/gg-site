@@ -21,4 +21,5 @@ const products = [
   { id: 20, name: "Effie Heart Charm", price: 36, tag: "charm", desc: "Brook & York" }
 ];
 
-export default products;
+module.exports = products;
+
