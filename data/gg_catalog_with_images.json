@@ -1,0 +1,970 @@
+[
+  {
+    "id": "BY-BR-001",
+    "name": "Avery Bracelet",
+    "price": 60,
+    "brand": "Brook & York",
+    "category": "Bracelets",
+    "image_url": "charms/avery-bracelet.jpg"
+  },
+  {
+    "id": "BY-BR-002",
+    "name": "Colette Charm Bracelet",
+    "price": 50,
+    "brand": "Brook & York",
+    "category": "Bracelets",
+    "image_url": "charms/colette-charm-bracelet.jpg"
+  },
+  {
+    "id": "BY-BR-003",
+    "name": "Petra Charm Bracelet",
+    "price": 70,
+    "brand": "Brook & York",
+    "category": "Bracelets",
+    "image_url": "charms/petra-charm-bracelet.jpg"
+  },
+  {
+    "id": "BY-BR-004",
+    "name": "Petra Tennis Charm Bracelet",
+    "price": 74,
+    "brand": "Brook & York",
+    "category": "Bracelets",
+    "image_url": "charms/petra-tennis-charm-bracelet.jpg"
+  },
+  {
+    "id": "BY-BR-005",
+    "name": "Colette Bracelet",
+    "price": 50,
+    "brand": "Brook & York",
+    "category": "Bracelets",
+    "image_url": "charms/colette-bracelet.jpg"
+  },
+  {
+    "id": "BY-BR-006",
+    "name": "Colette XL Bracelet",
+    "price": 68,
+    "brand": "Brook & York",
+    "category": "Bracelets",
+    "image_url": "charms/colette-xl-bracelet.jpg"
+  },
+  {
+    "id": "BY-BR-007",
+    "name": "Colette XL Charm Bracelet",
+    "price": 80,
+    "brand": "Brook & York",
+    "category": "Bracelets",
+    "image_url": "charms/colette-xl-charm-bracelet.jpg"
+  },
+  {
+    "id": "BY-NK-001",
+    "name": "Avery Necklace",
+    "price": 70,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/avery-necklace.jpg"
+  },
+  {
+    "id": "BY-NK-002",
+    "name": "Kendra Charm Necklace",
+    "price": 70,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/kendra-charm-necklace.jpg"
+  },
+  {
+    "id": "BY-NK-003",
+    "name": "Colette Charm Necklace",
+    "price": 66,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/colette-charm-necklace.jpg"
+  },
+  {
+    "id": "BY-NK-004",
+    "name": "Colette Charm Toggle Necklace",
+    "price": 90,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/colette-charm-toggle-necklace.jpg"
+  },
+  {
+    "id": "BY-NK-005",
+    "name": "Colette Necklace",
+    "price": 58,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/colette-necklace.jpg"
+  },
+  {
+    "id": "BY-NK-006",
+    "name": "Colette Mini Necklace",
+    "price": 58,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/colette-mini-necklace.jpg"
+  },
+  {
+    "id": "BY-NK-007",
+    "name": "Mae Necklace",
+    "price": 60,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/mae-necklace.jpg"
+  },
+  {
+    "id": "BY-NK-008",
+    "name": "Colette XL Necklace",
+    "price": 84,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/colette-xl-necklace.jpg"
+  },
+  {
+    "id": "BY-NK-009",
+    "name": "Colette XL Charm Necklace",
+    "price": 90,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/colette-xl-charm-necklace.jpg"
+  },
+  {
+    "id": "BY-NK-010",
+    "name": "Kate Necklace",
+    "price": 48,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/kate-necklace.jpg"
+  },
+  {
+    "id": "BY-NK-011",
+    "name": "Kenzie Necklace",
+    "price": 50,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/kenzie-necklace.jpg"
+  },
+  {
+    "id": "BY-NK-012",
+    "name": "Kendall Necklace",
+    "price": 60,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/kendall-necklace.jpg"
+  },
+  {
+    "id": "BY-NK-013",
+    "name": "Georgina Tennis Necklace",
+    "price": 90,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/georgina-tennis-necklace.jpg"
+  },
+  {
+    "id": "BY-NK-014",
+    "name": "Alanna Collar Necklace",
+    "price": 60,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/alanna-collar-necklace.jpg"
+  },
+  {
+    "id": "BY-BD-001",
+    "name": "Gaby Birthstone Bead",
+    "price": 34,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-birthstone-bead.jpg"
+  },
+  {
+    "id": "BY-BD-002",
+    "name": "Gaby Baguette Birthstone Bead",
+    "price": 34,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-baguette-birthstone-bead.jpg"
+  },
+  {
+    "id": "BY-BD-003",
+    "name": "Gaby Bezel Birthstone Bead",
+    "price": 34,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-bezel-birthstone-bead.jpg"
+  },
+  {
+    "id": "BY-BD-004",
+    "name": "Gaby Cutout Initial Bead",
+    "price": 34,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-cutout-initial-bead.jpg"
+  },
+  {
+    "id": "BY-BD-005",
+    "name": "Gaby Enamel Initial Bead",
+    "price": 34,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-enamel-initial-bead.jpg"
+  },
+  {
+    "id": "BY-BD-006",
+    "name": "Gaby Ball Textured Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-ball-textured-bead.jpg"
+  },
+  {
+    "id": "BY-BD-007",
+    "name": "Gaby Bow Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-bow-bead.jpg"
+  },
+  {
+    "id": "BY-BD-008",
+    "name": "Gaby Crystal Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-crystal-bead.jpg"
+  },
+  {
+    "id": "BY-BD-009",
+    "name": "Gaby Crystal Enamel Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-crystal-enamel-bead.jpg"
+  },
+  {
+    "id": "BY-BD-010",
+    "name": "Gaby Crystal Heart Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-crystal-heart-bead.jpg"
+  },
+  {
+    "id": "BY-BD-011",
+    "name": "Gaby Crystal Initial Bead",
+    "price": 34,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-crystal-initial-bead.jpg"
+  },
+  {
+    "id": "BY-BD-012",
+    "name": "Gaby Crystal Puffy Bezel Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-crystal-puffy-bezel-bead.jpg"
+  },
+  {
+    "id": "BY-BD-013",
+    "name": "Gaby Evil Eye Enamel Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-evil-eye-enamel-bead.jpg"
+  },
+  {
+    "id": "BY-BD-014",
+    "name": "Gaby Hamsa Enamel Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-hamsa-enamel-bead.jpg"
+  },
+  {
+    "id": "BY-BD-015",
+    "name": "Gaby Heart Enamel Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-heart-enamel-bead.jpg"
+  },
+  {
+    "id": "BY-BD-016",
+    "name": "Gaby Metal Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-metal-bead.jpg"
+  },
+  {
+    "id": "BY-BD-017",
+    "name": "Gaby Mini Enamel Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-mini-enamel-bead.jpg"
+  },
+  {
+    "id": "BY-BD-018",
+    "name": "Gaby Pearl Puffy Bezel Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-pearl-puffy-bezel-bead.jpg"
+  },
+  {
+    "id": "BY-BD-019",
+    "name": "Gaby Puffy Crystal Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-puffy-crystal-bead.jpg"
+  },
+  {
+    "id": "BY-BD-020",
+    "name": "Gaby Puffy Pearl Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-puffy-pearl-bead.jpg"
+  },
+  {
+    "id": "BY-BD-021",
+    "name": "Gaby Textured Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-textured-bead.jpg"
+  },
+  {
+    "id": "BY-BD-022",
+    "name": "Gaby XL Metal Bead",
+    "price": 32,
+    "brand": "Brook & York",
+    "category": "Beads",
+    "image_url": "charms/gaby-xl-metal-bead.jpg"
+  },
+  {
+    "id": "BY-CC-001",
+    "name": "Cami Butterfly Charm",
+    "price": 40,
+    "brand": "Brook & York",
+    "category": "Animals & Nature",
+    "image_url": "charms/cami-butterfly-charm.jpg"
+  },
+  {
+    "id": "BY-CC-002",
+    "name": "Cami Clover Pearl Charm",
+    "price": 40,
+    "brand": "Brook & York",
+    "category": "Animals & Nature",
+    "image_url": "charms/cami-clover-pearl-charm.jpg"
+  },
+  {
+    "id": "BY-CC-003",
+    "name": "Cami Flower Charm",
+    "price": 40,
+    "brand": "Brook & York",
+    "category": "Animals & Nature",
+    "image_url": "charms/cami-flower-charm.jpg"
+  },
+  {
+    "id": "BY-CC-004",
+    "name": "Cami Heart Charm",
+    "price": 40,
+    "brand": "Brook & York",
+    "category": "Hearts & Love",
+    "image_url": "charms/cami-heart-charm.jpg"
+  },
+  {
+    "id": "BY-CC-005",
+    "name": "Cami Pearl Charm",
+    "price": 40,
+    "brand": "Brook & York",
+    "category": "Pearls & Gems",
+    "image_url": "charms/cami-pearl-charm.jpg"
+  },
+  {
+    "id": "BY-CC-006",
+    "name": "Cami Star Charm",
+    "price": 40,
+    "brand": "Brook & York",
+    "category": "Animals & Nature",
+    "image_url": "charms/cami-star-charm.jpg"
+  },
+  {
+    "id": "BY-CC-007",
+    "name": "Cami Cross Charm",
+    "price": 40,
+    "brand": "Brook & York",
+    "category": "Symbols & Spiritual",
+    "image_url": "charms/cami-cross-charm.jpg"
+  },
+  {
+    "id": "BY-CC-008",
+    "name": "Cami Pearl Heart Charm",
+    "price": 40,
+    "brand": "Brook & York",
+    "category": "Hearts & Love",
+    "image_url": "charms/cami-pearl-heart-charm.jpg"
+  },
+  {
+    "id": "BY-CC-009",
+    "name": "Cami Open Heart Charm",
+    "price": 40,
+    "brand": "Brook & York",
+    "category": "Hearts & Love",
+    "image_url": "charms/cami-open-heart-charm.jpg"
+  },
+  {
+    "id": "BY-CC-010",
+    "name": "Cami Heart Locket Charm",
+    "price": 40,
+    "brand": "Brook & York",
+    "category": "Lockets & Locket Charms",
+    "image_url": "charms/cami-heart-locket-charm.jpg"
+  },
+  {
+    "id": "BY-CC-011",
+    "name": "Cami Starburst Locket Charm",
+    "price": 20,
+    "brand": "Brook & York",
+    "category": "Lockets & Locket Charms",
+    "image_url": "charms/cami-starburst-locket-charm.jpg"
+  },
+  {
+    "id": "BY-CH-001",
+    "name": "Mackenzie Birthstone Charm",
+    "price": 38,
+    "brand": "Brook & York",
+    "category": "Birthstones & Stones",
+    "image_url": "charms/mackenzie-birthstone-charm.jpg"
+  },
+  {
+    "id": "BY-CH-002",
+    "name": "Mackenzie Hinge Birthstone Charm",
+    "price": 38,
+    "brand": "Brook & York",
+    "category": "Birthstones & Stones",
+    "image_url": "charms/mackenzie-hinge-birthstone-charm.jpg"
+  },
+  {
+    "id": "BY-CH-003",
+    "name": "Melrose Birthstone Charm",
+    "price": 38,
+    "brand": "Brook & York",
+    "category": "Birthstones & Stones",
+    "image_url": "charms/melrose-birthstone-charm.jpg"
+  },
+  {
+    "id": "BY-CH-004",
+    "name": "Melrose Teardrop Birthstone Charm",
+    "price": 38,
+    "brand": "Brook & York",
+    "category": "Birthstones & Stones",
+    "image_url": "charms/melrose-teardrop-birthstone-charm.jpg"
+  },
+  {
+    "id": "BY-CH-005",
+    "name": "Mackenzie Elongated Birthstone Charm",
+    "price": 40,
+    "brand": "Brook & York",
+    "category": "Birthstones & Stones",
+    "image_url": "charms/mackenzie-elongated-birthstone-charm.jpg"
+  },
+  {
+    "id": "BY-CH-006",
+    "name": "Kate Birthstone Charm",
+    "price": 50,
+    "brand": "Brook & York",
+    "category": "Birthstones & Stones",
+    "image_url": "charms/kate-birthstone-charm.jpg"
+  },
+  {
+    "id": "BY-CH-007",
+    "name": "Stevie Initial Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Initials & Letters",
+    "image_url": "charms/stevie-initial-charm.jpg"
+  },
+  {
+    "id": "BY-CH-008",
+    "name": "Stevie Crystal Initial Charm",
+    "price": 38,
+    "brand": "Brook & York",
+    "category": "Initials & Letters",
+    "image_url": "charms/stevie-crystal-initial-charm.jpg"
+  },
+  {
+    "id": "BY-CH-009",
+    "name": "Palmer Initial Charm",
+    "price": 38,
+    "brand": "Brook & York",
+    "category": "Initials & Letters",
+    "image_url": "charms/palmer-initial-charm.jpg"
+  },
+  {
+    "id": "BY-CH-010",
+    "name": "Pippa Initial Charm",
+    "price": 40,
+    "brand": "Brook & York",
+    "category": "Initials & Letters",
+    "image_url": "charms/pippa-initial-charm.jpg"
+  },
+  {
+    "id": "BY-CH-011",
+    "name": "Molly Enamel Charm",
+    "price": 50,
+    "brand": "Brook & York",
+    "category": "Enamel Charms",
+    "image_url": "charms/molly-enamel-charm.jpg"
+  },
+  {
+    "id": "BY-CH-012",
+    "name": "Add\u2011on Madeline Initial Charm",
+    "price": 25,
+    "brand": "Brook & York",
+    "category": "Initials & Letters",
+    "image_url": "charms/addon-madeline-initial-charm.jpg"
+  },
+  {
+    "id": "BY-CH-013",
+    "name": "Add\u2011on Madeline Rectangle Initial Charm",
+    "price": 16,
+    "brand": "Brook & York",
+    "category": "Initials & Letters",
+    "image_url": "charms/addon-madeline-rectangle-initial-charm.jpg"
+  },
+  {
+    "id": "BY-CH-014",
+    "name": "Josephine Cross Charm",
+    "price": 62,
+    "brand": "Brook & York",
+    "category": "Symbols & Spiritual",
+    "image_url": "charms/josephine-cross-charm.jpg"
+  },
+  {
+    "id": "BY-CH-015",
+    "name": "Leia Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Hearts & Love",
+    "image_url": "charms/leia-charm.jpg"
+  },
+  {
+    "id": "BY-CH-016",
+    "name": "Lillian Mini Heart Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Hearts & Love",
+    "image_url": "charms/lillian-mini-heart-charm.jpg"
+  },
+  {
+    "id": "BY-CH-017",
+    "name": "Lillian Heart Charm",
+    "price": 40,
+    "brand": "Brook & York",
+    "category": "Hearts & Love",
+    "image_url": "charms/lillian-heart-charm.jpg"
+  },
+  {
+    "id": "BY-CH-018",
+    "name": "Effie Star Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Animals & Nature",
+    "image_url": "charms/effie-star-charm.jpg"
+  },
+  {
+    "id": "BY-CH-019",
+    "name": "Effie Compass Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Travel & Nautical",
+    "image_url": "charms/effie-compass-charm.jpg"
+  },
+  {
+    "id": "BY-CH-020",
+    "name": "Effie Palm Tree Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Travel & Nautical",
+    "image_url": "charms/effie-palm-tree-charm.jpg"
+  },
+  {
+    "id": "BY-CH-021",
+    "name": "Effie Airplane Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Travel & Nautical",
+    "image_url": "charms/effie-airplane-charm.jpg"
+  },
+  {
+    "id": "BY-CH-022",
+    "name": "Effie Angel Wing Charm",
+    "price": 28,
+    "brand": "Brook & York",
+    "category": "Symbols & Spiritual",
+    "image_url": "charms/effie-angel-wing-charm.jpg"
+  },
+  {
+    "id": "BY-CH-023",
+    "name": "Effie Ballet Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Hobbies & Sports",
+    "image_url": "charms/effie-ballet-charm.jpg"
+  },
+  {
+    "id": "BY-CH-024",
+    "name": "Effie Baseball Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Hobbies & Sports",
+    "image_url": "charms/effie-baseball-charm.jpg"
+  },
+  {
+    "id": "BY-CH-025",
+    "name": "Effie Bow Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Hobbies & Sports",
+    "image_url": "charms/effie-bow-charm.jpg"
+  },
+  {
+    "id": "BY-CH-026",
+    "name": "Effie Cheer Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Hobbies & Sports",
+    "image_url": "charms/effie-cheer-charm.jpg"
+  },
+  {
+    "id": "BY-CH-027",
+    "name": "Effie Cherry Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Food & Fun",
+    "image_url": "charms/effie-cherry-charm.jpg"
+  },
+  {
+    "id": "BY-CH-028",
+    "name": "Effie Coffee Cup Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Food & Fun",
+    "image_url": "charms/effie-coffee-cup-charm.jpg"
+  },
+  {
+    "id": "BY-CH-029",
+    "name": "Effie Croissant Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Food & Fun",
+    "image_url": "charms/effie-croissant-charm.jpg"
+  },
+  {
+    "id": "BY-CH-030",
+    "name": "Effie Cross Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Symbols & Spiritual",
+    "image_url": "charms/effie-cross-charm.jpg"
+  },
+  {
+    "id": "BY-CH-031",
+    "name": "Effie Crystal Heart Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Hearts & Love",
+    "image_url": "charms/effie-crystal-heart-charm.jpg"
+  },
+  {
+    "id": "BY-CH-032",
+    "name": "Effie Donut Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Food & Fun",
+    "image_url": "charms/effie-donut-charm.jpg"
+  },
+  {
+    "id": "BY-CH-033",
+    "name": "Effie Dragon Fly Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Animals & Nature",
+    "image_url": "charms/effie-dragon-fly-charm.jpg"
+  },
+  {
+    "id": "BY-CH-034",
+    "name": "Effie Elephant Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Animals & Nature",
+    "image_url": "charms/effie-elephant-charm.jpg"
+  },
+  {
+    "id": "BY-CH-035",
+    "name": "Effie Evil Eye Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Symbols & Spiritual",
+    "image_url": "charms/effie-evil-eye-charm.jpg"
+  },
+  {
+    "id": "BY-CH-036",
+    "name": "Effie Flower Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Animals & Nature",
+    "image_url": "charms/effie-flower-charm.jpg"
+  },
+  {
+    "id": "BY-CH-037",
+    "name": "Effie Football Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Hobbies & Sports",
+    "image_url": "charms/effie-football-charm.jpg"
+  },
+  {
+    "id": "BY-CH-038",
+    "name": "Effie Hamsa Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Symbols & Spiritual",
+    "image_url": "charms/effie-hamsa-charm.jpg"
+  },
+  {
+    "id": "BY-CH-039",
+    "name": "Effie Moon Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Animals & Nature",
+    "image_url": "charms/effie-moon-charm.jpg"
+  },
+  {
+    "id": "BY-CH-040",
+    "name": "Effie Number Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Initials & Letters",
+    "image_url": "charms/effie-number-charm.jpg"
+  },
+  {
+    "id": "BY-CH-041",
+    "name": "Effie Paw Print Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Animals & Nature",
+    "image_url": "charms/effie-paw-print-charm.jpg"
+  },
+  {
+    "id": "BY-CH-042",
+    "name": "Effie Pearl Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Pearls & Gems",
+    "image_url": "charms/effie-pearl-charm.jpg"
+  },
+  {
+    "id": "BY-CH-043",
+    "name": "Effie Pickleball Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Hobbies & Sports",
+    "image_url": "charms/effie-pickleball-charm.jpg"
+  },
+  {
+    "id": "BY-CH-044",
+    "name": "Effie Shell Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Travel & Nautical",
+    "image_url": "charms/effie-shell-charm.jpg"
+  },
+  {
+    "id": "BY-CH-045",
+    "name": "Effie Soccer Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Hobbies & Sports",
+    "image_url": "charms/effie-soccer-charm.jpg"
+  },
+  {
+    "id": "BY-CH-046",
+    "name": "Effie Starfish Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Travel & Nautical",
+    "image_url": "charms/effie-starfish-charm.jpg"
+  },
+  {
+    "id": "BY-CH-047",
+    "name": "Effie Strawberry Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Food & Fun",
+    "image_url": "charms/effie-strawberry-charm.jpg"
+  },
+  {
+    "id": "BY-CH-048",
+    "name": "Effie Sun Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Animals & Nature",
+    "image_url": "charms/effie-sun-charm.jpg"
+  },
+  {
+    "id": "BY-CH-049",
+    "name": "Effie Tennis Racket Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Hobbies & Sports",
+    "image_url": "charms/effie-tennis-racket-charm.jpg"
+  },
+  {
+    "id": "BY-CH-050",
+    "name": "Effie Turquoise Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Birthstones & Stones",
+    "image_url": "charms/effie-turquoise-charm.jpg"
+  },
+  {
+    "id": "BY-CH-051",
+    "name": "Effie Zodiac Charm",
+    "price": 36,
+    "brand": "Brook & York",
+    "category": "Symbols & Spiritual",
+    "image_url": "charms/effie-zodiac-charm.jpg"
+  },
+  {
+    "id": "BY-CH-052",
+    "name": "Dakota Birthstone Wanderlust Charm",
+    "price": 38,
+    "brand": "Brook & York",
+    "category": "Birthstones & Stones",
+    "image_url": "charms/dakota-birthstone-wanderlust-charm.jpg"
+  },
+  {
+    "id": "BY-CH-053",
+    "name": "Dakota Clover Wanderlust Charm",
+    "price": 38,
+    "brand": "Brook & York",
+    "category": "Animals & Nature",
+    "image_url": "charms/dakota-clover-wanderlust-charm.jpg"
+  },
+  {
+    "id": "BY-CH-054",
+    "name": "Dakota Evil Eye Wanderlust Charm",
+    "price": 38,
+    "brand": "Brook & York",
+    "category": "Symbols & Spiritual",
+    "image_url": "charms/dakota-evil-eye-wanderlust-charm.jpg"
+  },
+  {
+    "id": "BY-VR-001",
+    "name": "Etta Gold Vermeil Necklace",
+    "price": 160,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/etta-gold-vermeil-necklace.jpg"
+  },
+  {
+    "id": "BY-VR-002",
+    "name": "Halsey Gold Vermeil Necklace",
+    "price": 130,
+    "brand": "Brook & York",
+    "category": "Necklaces",
+    "image_url": "charms/halsey-gold-vermeil-necklace.jpg"
+  },
+  {
+    "id": "BY-VR-003",
+    "name": "Gracie Gold Vermeil Baguette Birthstone Bead",
+    "price": 120,
+    "brand": "Brook & York",
+    "category": "Birthstones & Stones",
+    "image_url": "charms/gracie-gold-vermeil-baguette-birthstone-bead.jpg"
+  },
+  {
+    "id": "BY-VR-004",
+    "name": "Gracie Gold Vermeil Bezel Birthstone Bead",
+    "price": 94,
+    "brand": "Brook & York",
+    "category": "Birthstones & Stones",
+    "image_url": "charms/gracie-gold-vermeil-bezel-birthstone-bead.jpg"
+  },
+  {
+    "id": "BY-VR-005",
+    "name": "Gracie Gold Vermeil Crystal Bead",
+    "price": 60,
+    "brand": "Brook & York",
+    "category": "Birthstones & Stones",
+    "image_url": "charms/gracie-gold-vermeil-crystal-bead.jpg"
+  },
+  {
+    "id": "BY-VR-006",
+    "name": "Gracie Gold Vermeil Diamond Bead",
+    "price": 138,
+    "brand": "Brook & York",
+    "category": "Birthstones & Stones",
+    "image_url": "charms/gracie-gold-vermeil-diamond-bead.jpg"
+  },
+  {
+    "id": "BY-VR-007",
+    "name": "Gracie Gold Vermeil Diamond Heart Bead",
+    "price": 164,
+    "brand": "Brook & York",
+    "category": "Hearts & Love",
+    "image_url": "charms/gracie-gold-vermeil-diamond-heart-bead.jpg"
+  },
+  {
+    "id": "BY-VR-008",
+    "name": "Gracie Gold Vermeil Heart Bead",
+    "price": 70,
+    "brand": "Brook & York",
+    "category": "Hearts & Love",
+    "image_url": "charms/gracie-gold-vermeil-heart-bead.jpg"
+  },
+  {
+    "id": "BY-VR-009",
+    "name": "Gracie Gold Vermeil Love Bead",
+    "price": 50,
+    "brand": "Brook & York",
+    "category": "Hearts & Love",
+    "image_url": "charms/gracie-gold-vermeil-love-bead.jpg"
+  },
+  {
+    "id": "LN-CH-001",
+    "name": "Diamond Star Charm 14k Gold",
+    "price": 119,
+    "brand": "Linjer",
+    "category": "Birthstones & Stones",
+    "image_url": "charms/diamond-star-charm-14k-gold.jpg"
+  },
+  {
+    "id": "LN-CH-002",
+    "name": "October Birthstone Pendant 14k Gold \u2013 Opal",
+    "price": 169,
+    "brand": "Linjer",
+    "category": "Birthstones & Stones",
+    "image_url": "charms/october-birthstone-pendant-14k-gold-opal.jpg"
+  },
+  {
+    "id": "LN-CH-003",
+    "name": "Diamond Initial Pendant 14k Gold \u2013 J",
+    "price": 189,
+    "brand": "Linjer",
+    "category": "Initials & Letters",
+    "image_url": "charms/diamond-initial-pendant-14k-gold-j.jpg"
+  },
+  {
+    "id": "CS-CH-001",
+    "name": "Takeout Box Charm in White",
+    "price": 12,
+    "brand": "Canvas Style",
+    "category": "Food & Fun",
+    "image_url": "charms/takeout-box-charm-in-white.jpg"
+  }
+]
