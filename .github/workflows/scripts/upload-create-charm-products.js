@@ -18,7 +18,7 @@ const path = require('path');
 const axios = require('axios');
 
 const SHOP_DOMAIN = process.env.SHOP_DOMAIN || process.env.SHOPIFY_SHOP_DOMAIN;
-const ACCESS_TOKEN = process.env.ACCESS_TOKEN || process.env.SHOPIFY_ACCESS_TOKEN || process.env.SHOPIFY_ACCESS_TOKEN;
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN || process.env.SHOPIFY_ACCESS_TOKEN;
 const API_VERSION = process.env.API_VERSION || '2024-10';
 
 const DEFAULT_PRICE = process.env.DEFAULT_PRICE || '12.00';
