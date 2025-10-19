@@ -1,29 +1,3 @@
----
-name: Upload Charms to Shopify
-
-'on':
-  # Allow manual trigger from GitHub Actions UI
-  workflow_dispatch:
-    inputs:
-      dry_run:
-        description: 'Run in dry-run mode (no actual uploads)'
-        required: false
-        default: 'false'
-        type: boolean
-  # Optionally trigger on push to main branch
-  push:
-    branches:
-      - main
-    paths:
-      - 'data/gg_catalog_with_images.json'
-
-jobs:
-  upload-charms:
-    name: Upload Charms to Shopify
-    runs-on: ubuntu-latest
-
-# GitHub Actions workflow to upload charms images and create products in Shopify.
-# Trigger: manual (workflow_dispatch). Run this in the branch shopify/upload-charms-action.
 name: Upload Charms to Shopify
 
 on:
@@ -44,43 +18,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Validate catalog data
-        run: |
-          if [ ! -f "data/gg_catalog_with_images.json" ]; then
-            echo "Error: Catalog file not found"
-            exit 1
-          fi
-          echo "Catalog file found, validating JSON..."
-          node -e "JSON.parse(require('fs').readFileSync(\
-          'data/gg_catalog_with_images.json', 'utf8'))"
-          echo "Catalog JSON is valid"
-
-      - name: Upload products to Shopify
-        env:
-          SHOPIFY_STORE_URL: ${{ secrets.SHOPIFY_STORE_URL }}
-          SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
-          DRY_RUN: ${{ inputs.dry_run || 'false' }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          INVENTORY_QUANTITY: ${{ vars.SHOPIFY_INVENTORY_QUANTITY || '10' }}
-        run: |
-          node scripts/upload-to-shopify.js
-
-      - name: Upload summary
-        if: always()
-        run: |
-          echo "## Upload Summary" >> $GITHUB_STEP_SUMMARY
-          echo "- Workflow run completed" >> $GITHUB_STEP_SUMMARY
-          echo "- Dry run mode: \
-          ${{ inputs.dry_run || 'false' }}" >> $GITHUB_STEP_SUMMARY
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -88,14 +25,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # Install dependencies in project root; fallback to npm install if lockfile is missing
-          npm ci --no-audit --no-fund || npm install --no-audit --no-fund
+          # create a minimal package.json and install axios (keeps repo untouched)
+          if [ ! -f package.json ]; then npm init -y; fi
+          npm install axios --no-audit --no-fund
 
-      - name: Ensure scripts directory exists
-        run: |
-          ls -la || true
+      - name: List workspace (debug)
+        run: ls -la
 
       - name: Run upload/create script
-        run: |
-          node ./scripts/upload-create-charm-products.js public/Charms
-        # ACTION will pick up SHOP_DOMAIN and ACCESS_TOKEN from secrets above
+        run: node ./scripts/upload-create-charm-products.js public/Charms
