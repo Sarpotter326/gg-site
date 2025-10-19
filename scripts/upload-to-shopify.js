@@ -5,6 +5,8 @@ const https = require('https');
 const SHOPIFY_STORE_URL = process.env.SHOPIFY_STORE_URL;
 const SHOPIFY_ACCESS_TOKEN = process.env.SHOPIFY_ACCESS_TOKEN;
 const DRY_RUN = process.env.DRY_RUN === 'true';
+const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY || 'Sarpotter326/gg-site';
+const INVENTORY_QUANTITY = parseInt(process.env.INVENTORY_QUANTITY || '10', 10);
 
 // Validate environment variables
 if (!SHOPIFY_STORE_URL || !SHOPIFY_ACCESS_TOKEN) {
@@ -93,7 +95,7 @@ async function createProduct(item) {
           price: item.price.toString(),
           sku: item.id,
           inventory_management: 'shopify',
-          inventory_quantity: 10
+          inventory_quantity: INVENTORY_QUANTITY
         }
       ]
     }
@@ -101,7 +103,7 @@ async function createProduct(item) {
 
   // Add image if available
   if (item.image_url) {
-    const imageUrl = `https://raw.githubusercontent.com/Sarpotter326/gg-site/main/public/${item.image_url}`;
+    const imageUrl = `https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/public/${item.image_url}`;
     product.product.images = [
       {
         src: imageUrl,

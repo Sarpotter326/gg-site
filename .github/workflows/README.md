@@ -14,6 +14,12 @@ You need to add the following secrets to your GitHub repository:
 - **SHOPIFY_STORE_URL**: Your Shopify store URL (e.g., `your-store.myshopify.com`)
 - **SHOPIFY_ACCESS_TOKEN**: Your Shopify Admin API access token
 
+### Optional: Configure Variables
+
+Optionally, you can configure the following repository variables (Settings → Secrets and variables → Actions → Variables tab):
+
+- **SHOPIFY_INVENTORY_QUANTITY**: Default inventory quantity for products (default: 10)
+
 ### 2. Get Shopify API Credentials
 
 To get your Shopify API credentials:
