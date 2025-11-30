@@ -7,7 +7,9 @@ jobs:
   upload-and-create:
     runs-on: ubuntu-latest
     env:
-      SHOP_DOMAIN: ${{ secrets.SHOP_DOMAIN }}
+      # Default SHOP_DOMAIN is set to your Shopify store; you can still
+      # override this by adding a repository secret named SHOP_DOMAIN.
+      SHOP_DOMAIN: "cqdugz-jq.myshopify.com"
       ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
       API_VERSION: '2024-10'
       DEFAULT_PRICE: '12.00'

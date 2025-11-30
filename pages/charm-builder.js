@@ -54,7 +54,7 @@ export default function CharmBuilder({ slots = 5 }) {
   };
 
   return (
-    <div className="flex flex-col items-center gap-6 p-6 bg-[#FFFAF0] text-[#8C6A4E] border rounded-lg shadow">
+    <div className="charm-builder flex flex-col items-center gap-6 p-6 bg-[#FFFAF0] text-[#8C6A4E] border rounded-lg shadow">
       {/* Step 2 heading */}
       <h2 className="text-2xl font-semibold text-center">
         Step 2: Design Your Custom Charm Jewelry
