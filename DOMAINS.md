@@ -161,3 +161,10 @@ If you want, say which of the above to do next and I will implement it.
 ---
 
 Generated on: 2025-11-30
+
+npm init -y
+npm install axios
+
+SHOP_DOMAIN=cqdugz-jq.myshopify.com SHOPIFY_ACCESS_TOKEN=shpat_xxx node [upload-create-charm-products.js](http://_vscodecontentref_/1) public/Charms
+
+dig +short CNAME www.graceandgoldcompany.com
