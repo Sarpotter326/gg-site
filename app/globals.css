@@ -4,9 +4,16 @@
 
 
 /* Charm Builder link colour override */
-.charm-builder a {
-	color: inherit;
-	text-decoration: none; /* Optional: remove underline */
+.charm-builder a,
+.charm-builder a:link,
+.charm-builder a:visited,
+.charm-builder a:hover,
+.charm-builder a:active {
+	color: inherit !important;
+	-webkit-text-fill-color: inherit !important; /* iOS/Safari override */
+	text-decoration: none !important; /* Optional: remove underline */
+		text-decoration-color: inherit !important;
+		-webkit-text-decoration-color: inherit !important;
 }
 
 /* Note: app-specific overrides are kept here. See styles/globals.css for global directives. */
