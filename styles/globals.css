@@ -1,3 +1,5 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global styles (kept intentionally minimal — app-specific overrides live in app/globals.css) */
