@@ -11,7 +11,7 @@ You need to add the following secrets to your GitHub repository:
 1. Go to your repository Settings → Secrets and variables → Actions
 2. Add the following secrets:
 
-- **SHOPIFY_STORE_URL**: Your Shopify store URL (e.g., `your-store.myshopify.com`)
+- **SHOPIFY_STORE_URL**: Your Shopify store URL (e.g., `cqdugz-jq.myshopify.com`)
 - **SHOPIFY_ACCESS_TOKEN**: Your Shopify Admin API access token
 
 ### Optional: Configure Variables
@@ -37,7 +37,7 @@ To get your Shopify API credentials:
 8. Click "Save"
 9. Click "Install app"
 10. Copy the "Admin API access token" - this is your `SHOPIFY_ACCESS_TOKEN`
-11. Your store URL is in the format: `your-store-name.myshopify.com`
+11. Your store URL is in the format: `cqdugz-jq.myshopify.com`
 
 ## Usage
 
